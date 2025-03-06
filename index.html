@@ -1,11 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Landing Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 1rem;
+        }
+
+        .hero {
+            background-color: #f4f4f4;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .features {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-card {
+            text-align: center;
+            padding: 2rem;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+        }
+    </style>
 </head>
 <body>
-    <p>This is a basic HTML template Update 213x</p>
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">Logo</div>
+            <div class="nav-links">
+                <a href="#home">Trang chủ</a>
+                <a href="#features">Tính năng</a>
+                <a href="#contact">Liên hệ</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Chào mừng đến với Landing Page</h1>
+        <p>Đây là mô tả ngắn về sản phẩm hoặc dịch vụ của bạn</p>
+        <a href="#" class="cta-button">Bắt đầu ngay</a>
+    </section>
+
+    <section class="features">
+        <div class="feature-card">
+            <h3>Tính năng 1</h3>
+            <p>Mô tả chi tiết về tính năng 1 của sản phẩm hoặc dịch vụ.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Tính năng 2</h3>
+            <p>Mô tả chi tiết về tính năng 2 của sản phẩm hoặc dịch vụ.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Tính năng 3</h3>
+            <p>Mô tả chi tiết về tính năng 3 của sản phẩm hoặc dịch vụ.</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Landing Page. Đã đăng ký bản quyền.</p>
+    </footer>
 </body>
 </html>
