@@ -54,11 +54,7 @@ pipeline {
                             ], 
                             usePromotionTimestamp: false, 
                             useWorkspaceInPromotion: false, 
-                            verbose: true,
-                                 execCommand: '''
-                cd /var/www/project1 || exit 1
-                echo "Current directory: $(pwd)"
-            '''
+                            verbose: true
                         )
                     ]
                 )
