@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone stage') {
             steps {
-                git credentialsId: 'SSH_to_Github', url: 'https://github.com/Phuoc95/html_01.git'
+                git credentialsId: 'webhook-3', url: 'https://gitlab.com/phuoctk/webhook-2.git'
                 echo "Repository cloned successfully"
             }
         }
@@ -46,7 +46,7 @@ pipeline {
                                     makeEmptyDirs: false, 
                                     noDefaultExcludes: false, 
                                     patternSeparator: '[, ]+', 
-                                    remoteDirectory: '/var/www/project1'
+                                    remoteDirectory: 'var\\/www\\/project1'
                                     remoteDirectorySDF: true, 
                                     removePrefix: '', 
                                     sourceFiles: '**/*'
