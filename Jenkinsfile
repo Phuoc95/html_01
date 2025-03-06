@@ -47,7 +47,7 @@ pipeline {
                                     noDefaultExcludes: false, 
                                     patternSeparator: '[, ]+', 
                                     remoteDirectory: '/var/www/project1',
-                                    remoteDirectorySDF: true, 
+                                    remoteDirectorySDF: false, 
                                     removePrefix: '', 
                                     sourceFiles: '**/*'
                                 )
