@@ -30,7 +30,7 @@ pipeline {
 
     sourceFiles: '**/*',
     remoteDirectory: 'var/www/project123', // Bỏ dấu `/` đầu
-    cleanRemote: false,
+    cleanRemote: true,
     excludes: 'node_modules/,vendor/,tests/,storage/framework/cache/**,storage/framework/sessions/**',
     execTimeout: 180000,
     flatten: false,
