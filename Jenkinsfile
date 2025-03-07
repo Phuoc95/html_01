@@ -28,7 +28,7 @@ remoteDirectory: '',
 execCommand: 'cp -r $WORKSPACE/* /var/www/project123/'
 
                                     // remoteDirectory: '/var/www/project123',
-                                    remoteDirectorySDF: true, 
+                                    remoteDirectorySDF: false, 
                                     removePrefix: '', 
                                     sourceFiles: '**/*'
                                 )
