@@ -24,7 +24,7 @@ pipeline {
                                     makeEmptyDirs: true, 
                                     noDefaultExcludes: false, 
                                     patternSeparator: '[, ]+', 
-                                    remoteDirectory: '',
+                                    // remoteDirectory: '',
                                     remoteDirectory: 'var/www/project123', 
                                     // execCommand: 'mkdir -p /var/www/project123 && cp -r $WORKSPACE/* /var/www/project123/',
                                     remoteDirectorySDF: false, 
