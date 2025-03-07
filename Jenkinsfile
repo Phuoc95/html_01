@@ -25,7 +25,8 @@ pipeline {
                                     noDefaultExcludes: false, 
                                     patternSeparator: '[, ]+', 
                                     remoteDirectory: '',
-                                    execCommand: 'cp -r $WORKSPACE/* /var/www/project123/',
+                                    // execCommand: 'cp -r $WORKSPACE/* /var/www/project123/',
+                                    execCommand: 'mkdir -p /var/www/project123 && cp -r $WORKSPACE/* /var/www/project123/'  // Thêm lệnh này
                                     // remoteDirectory: '/var/www/project123',
                                     remoteDirectorySDF: false, 
                                     removePrefix: '', 
