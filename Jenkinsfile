@@ -21,13 +21,12 @@ pipeline {
                                     excludes: 'node_modules/,vendor/,tests/,storage/framework/cache/**,storage/framework/sessions/**', 
                                     execTimeout: 180000, 
                                     flatten: false, 
-                                    makeEmptyDirs: false, 
+                                    makeEmptyDirs: true, 
                                     noDefaultExcludes: false, 
                                     patternSeparator: '[, ]+', 
                                     remoteDirectory: '',
-                                    // execCommand: 'cp -r $WORKSPACE/* /var/www/project123/',
-                                    execCommand: 'mkdir -p /var/www/project123 && cp -r $WORKSPACE/* /var/www/project123/',  // Thêm lệnh này
-                                    // remoteDirectory: '/var/www/project123',
+                                    remoteDirectory: 'var/www/project123', 
+                                    // execCommand: 'mkdir -p /var/www/project123 && cp -r $WORKSPACE/* /var/www/project123/',
                                     remoteDirectorySDF: false, 
                                     removePrefix: '', 
                                     sourceFiles: '**/*'
