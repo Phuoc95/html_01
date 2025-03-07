@@ -31,17 +31,20 @@ pipeline {
                                     // removePrefix: '', 
                                     // sourceFiles: '**/*'
 
-                                       cleanRemote: false, 
-                                    excludes: 'node_modules/,vendor/,tests/,storage/framework/cache/**,storage/framework/sessions/**', 
-                                    execTimeout: 180000, 
-                                    flatten: false, 
-                                    makeEmptyDirs: false, 
-                                    noDefaultExcludes: false, 
-                                    patternSeparator: '[, ]+', 
-                                    remoteDirectory: '/var/www/project123',
-                                    remoteDirectorySDF: false, 
-                                    removePrefix: '', 
-                                    sourceFiles: '**/*'
+                                    //    cleanRemote: false, 
+                                    // excludes: 'node_modules/,vendor/,tests/,storage/framework/cache/**,storage/framework/sessions/**', 
+                                    // execTimeout: 180000, 
+                                    // flatten: false, 
+                                    // makeEmptyDirs: false, 
+                                    // noDefaultExcludes: false, 
+                                    // patternSeparator: '[, ]+', 
+                                    // remoteDirectory: '/var/www/project123',
+                                    // remoteDirectorySDF: false, 
+                                    // removePrefix: '', 
+                                    // sourceFiles: '**/*'
+
+                                    execCommand: 'pwd && ls -l /var/www/project123',
+                            execTimeout: 60000
                                 )
                             ], 
                             usePromotionTimestamp: false, 
