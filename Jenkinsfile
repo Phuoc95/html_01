@@ -36,20 +36,6 @@ pipeline {
                             configName: '54.255.82.109 (EC2)', 
                             transfers: [
                                 sshTransfer(
-                                    // cleanRemote: false, 
-                                    // excludes: 'node_modules/,vendor/,tests/,storage/framework/cache/**,storage/framework/sessions/**', 
-                                    // execTimeout: 180000, 
-                                    // flatten: false, 
-                                    // makeEmptyDirs: true, 
-                                    // noDefaultExcludes: false, 
-                                    // patternSeparator: '[, ]+', 
-                                    // // remoteDirectory: '',
-                                    // remoteDirectory: 'var/www/project123', 
-                                    // // execCommand: 'mkdir -p /var/www/project123 && cp -r $WORKSPACE/* /var/www/project123/',
-                                    // remoteDirectorySDF: false, 
-                                    // removePrefix: '', 
-                                    // sourceFiles: '**/*'
-
                                     cleanRemote: false, 
                                     excludes: 'node_modules/,vendor/,tests/,storage/framework/cache/**,storage/framework/sessions/**', 
                                     execTimeout: 180000, 
@@ -57,6 +43,7 @@ pipeline {
                                     makeEmptyDirs: false, 
                                     noDefaultExcludes: false, 
                                     patternSeparator: '[, ]+', 
+                                    // // execCommand: 'mkdir -p /var/www/project123 && cp -r $WORKSPACE/* /var/www/project123/',
                                     remoteDirectory: '/var/www/project123',
                                     remoteDirectorySDF: false, 
                                     removePrefix: '', 
