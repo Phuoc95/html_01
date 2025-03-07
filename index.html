@@ -204,6 +204,199 @@
                 margin: 0 0.5rem;
             }
         }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #333;
+            padding-top: 2rem;
+        }
+
+        .why-us {
+            background: #f8f9fa;
+            padding: 5rem 2rem;
+        }
+
+        .why-us-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .why-us-item {
+            text-align: center;
+            padding: 2rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .pricing-card {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+        }
+
+        .pricing-card.popular {
+            transform: scale(1.05);
+            border: 2px solid #007bff;
+        }
+
+        .popular-badge {
+            position: absolute;
+            top: -15px;
+            right: 20px;
+            background: #007bff;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        .price {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #007bff;
+            margin: 1rem 0;
+        }
+
+        .price span {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        .pricing-button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 1rem;
+            transition: background 0.3s ease;
+        }
+
+        .pricing-button:hover {
+            background: #0056b3;
+        }
+
+        .process {
+            padding: 5rem 2rem;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        }
+
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .process-step {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .step-number {
+            width: 50px;
+            height: 50px;
+            background: #007bff;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .blog-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+        }
+
+        .blog-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .blog-content {
+            padding: 1.5rem;
+        }
+
+        .read-more {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .partner-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 2rem;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .partner-grid img {
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+            object-fit: contain;
+            margin: 0 auto;
+            display: block;
+            padding: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .partner-grid img:hover {
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            .pricing-card.popular {
+                transform: scale(1);
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .blog-grid {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
 </head>
 <body>
@@ -226,20 +419,149 @@
     </section>
 
     <section class="features" id="features">
-        <div class="feature-card">
-            <div class="feature-icon">🚀</div>
-            <h3>Hiệu suất cao</h3>
-            <p>Tối ưu hóa quy trình làm việc, tăng năng suất gấp 3 lần với giải pháp của chúng tôi.</p>
+        <!-- <h2 class="section-title">Giải pháp toàn diện</h2> -->
+        <div class="features">
+            <div class="feature-card">
+                <div class="feature-icon">🚀</div>
+                <h3>Hiệu suất cao</h3>
+                <p>Tối ưu hóa quy trình làm việc, tăng năng suất gấp 3 lần với giải pháp của chúng tôi. Hệ thống tự động hóa thông minh giúp tiết kiệm thời gian và nguồn lực.</p>
+                <a href="#" class="learn-more">Tìm hiểu thêm →</a>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔒</div>
+                <h3>Bảo mật tuyệt đối</h3>
+                <p>Hệ thống bảo mật đa lớp với mã hóa end-to-end, xác thực hai yếu tố và giám sát 24/7 đảm bảo an toàn tuyệt đối cho dữ liệu của bạn.</p>
+                <a href="#" class="learn-more">Tìm hiểu thêm →</a>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">💡</div>
+                <h3>Sáng tạo không ngừng</h3>
+                <p>Đội ngũ R&D liên tục nghiên cứu và phát triển các tính năng mới, đảm bảo sản phẩm luôn dẫn đầu xu hướng công nghệ.</p>
+                <a href="#" class="learn-more">Tìm hiểu thêm →</a>
+            </div>
         </div>
-        <div class="feature-card">
-            <div class="feature-icon">🔒</div>
-            <h3>Bảo mật tuyệt đối</h3>
-            <p>Hệ thống bảo mật đa lớp, đảm bảo an toàn cho dữ liệu của doanh nghiệp.</p>
+    </section>
+
+    <section class="why-us">
+        <div class="container">
+            <h2 class="section-title">Tại sao chọn chúng tôi?</h2>
+            <div class="why-us-grid">
+                <div class="why-us-item">
+                    <h3>10+ Năm Kinh Nghiệm</h3>
+                    <p>Với hơn một thập kỷ trong ngành, chúng tôi hiểu rõ những thách thức và nhu cầu của doanh nghiệp.</p>
+                </div>
+                <div class="why-us-item">
+                    <h3>1000+ Khách Hàng</h3>
+                    <p>Phục vụ hơn nghìn khách hàng từ các tập đoàn lớn đến các startup đầy triển vọng.</p>
+                </div>
+                <div class="why-us-item">
+                    <h3>24/7 Hỗ trợ</h3>
+                    <p>Đội ngũ hỗ trợ kỹ thuật chuyên nghiệp luôn sẵn sàng giải đáp mọi thắc mắc.</p>
+                </div>
+                <div class="why-us-item">
+                    <h3>99.9% Uptime</h3>
+                    <p>Cam kết thời gian hoạt động cao nhất, đảm bảo doanh nghiệp vận hành liên tục.</p>
+                </div>
+            </div>
         </div>
-        <div class="feature-card">
-            <div class="feature-icon">💡</div>
-            <h3>Sáng tạo không ngừng</h3>
-            <p>Liên tục cập nhật các tính năng mới, đáp ứng nhu cầu phát triển.</p>
+    </section>
+
+    <section class="pricing" id="pricing">
+        <h2 class="section-title">Bảng giá dịch vụ</h2>
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <h3>Cơ bản</h3>
+                <div class="price">499k<span>/tháng</span></div>
+                <ul>
+                    <li>✓ 5 người dùng</li>
+                    <li>✓ 10GB lưu trữ</li>
+                    <li>✓ Hỗ trợ email</li>
+                    <li>✓ Bảo mật cơ bản</li>
+                    <li>✗ API Access</li>
+                </ul>
+                <a href="#" class="pricing-button">Dùng thử miễn phí</a>
+            </div>
+            <div class="pricing-card popular">
+                <div class="popular-badge">Phổ biến nhất</div>
+                <h3>Doanh nghiệp</h3>
+                <div class="price">999k<span>/tháng</span></div>
+                <ul>
+                    <li>✓ 20 người dùng</li>
+                    <li>✓ 100GB lưu trữ</li>
+                    <li>✓ Hỗ trợ 24/7</li>
+                    <li>✓ Bảo mật nâng cao</li>
+                    <li>✓ API Access</li>
+                </ul>
+                <a href="#" class="pricing-button">Bắt đầu ngay</a>
+            </div>
+            <div class="pricing-card">
+                <h3>Enterprise</h3>
+                <div class="price">Liên hệ</div>
+                <ul>
+                    <li>✓ Không giới hạn người dùng</li>
+                    <li>✓ Lưu trữ tùy chỉnh</li>
+                    <li>✓ Hỗ trợ ưu tiên 24/7</li>
+                    <li>✓ Bảo mật cao cấp</li>
+                    <li>✓ API tùy chỉnh</li>
+                </ul>
+                <a href="#" class="pricing-button">Liên hệ với chúng tôi</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="process">
+        <h2 class="section-title">Quy trình làm việc</h2>
+        <div class="process-grid">
+            <div class="process-step">
+                <div class="step-number">1</div>
+                <h3>Tư vấn</h3>
+                <p>Chúng tôi lắng nghe và phân tích nhu cầu của doanh nghiệp bạn</p>
+            </div>
+            <div class="process-step">
+                <div class="step-number">2</div>
+                <h3>Đề xuất</h3>
+                <p>Đưa ra giải pháp phù hợp nhất với mô hình kinh doanh</p>
+            </div>
+            <div class="process-step">
+                <div class="step-number">3</div>
+                <h3>Triển khai</h3>
+                <p>Thực hiện nhanh chóng và chuyên nghiệp</p>
+            </div>
+            <div class="process-step">
+                <div class="step-number">4</div>
+                <h3>Hỗ trợ</h3>
+                <p>Đồng hành cùng sự phát triển của doanh nghiệp</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="blog" id="blog">
+        <h2 class="section-title">Tin tức & Cập nhật</h2>
+        <div class="blog-grid">
+            <article class="blog-card">
+                <img src="https://picsum.photos/400/250" alt="Blog 1">
+                <div class="blog-content">
+                    <h3>Xu hướng công nghệ 2024</h3>
+                    <p>Khám phá những xu hướng công nghệ mới nhất đang định hình tương lai...</p>
+                    <a href="#" class="read-more">Đọc thêm →</a>
+                </div>
+            </article>
+            <article class="blog-card">
+                <img src="https://picsum.photos/400/251" alt="Blog 2">
+                <div class="blog-content">
+                    <h3>Bảo mật trong kỷ nguyên số</h3>
+                    <p>Những thách thức và giải pháp bảo mật cho doanh nghiệp hiện đại...</p>
+                    <a href="#" class="read-more">Đọc thêm →</a>
+                </div>
+            </article>
+            <article class="blog-card">
+                <img src="https://picsum.photos/400/252" alt="Blog 3">
+                <div class="blog-content">
+                    <h3>Chuyển đổi số thành công</h3>
+                    <p>Câu chuyện về những doanh nghiệp đã thành công trong hành trình số hóa...</p>
+                    <a href="#" class="read-more">Đọc thêm →</a>
+                </div>
+            </article>
         </div>
     </section>
 
@@ -256,6 +578,18 @@
                 <h3>Trần Thị B</h3>
                 <p>"Đội ngũ hỗ trợ chuyên nghiệp, nhiệt tình. Sản phẩm đáp ứng mọi nhu cầu của chúng tôi."</p>
             </div>
+        </div>
+    </section>
+
+    <section class="partners">
+        <h2 class="section-title">Đối tác của chúng tôi</h2>
+        <div class="partner-grid">
+            <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google">
+            <img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31" alt="Microsoft">
+            <img src="https://www.apple.com/ac/structured-data/images/knowledge_graph_logo.png" alt="Apple">
+            <img src="https://www.ibm.com/brand/experience-guides/developer/b1db1ae501d522a1a4b49613fe07c9f1/01_8-bar-positive.svg" alt="IBM">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/2560px-Amazon_logo.svg.png" alt="Amazon">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Samsung_Logo.svg/2560px-Samsung_Logo.svg.png" alt="Samsung">
         </div>
     </section>
 
