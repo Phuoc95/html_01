@@ -38,7 +38,7 @@ pipeline {
                                     makeEmptyDirs: false, 
                                     noDefaultExcludes: false, 
                                     patternSeparator: '[, ]+', 
-                                    remoteDirectory: '/var/www/project123',  // Đường dẫn tuyệt đối
+                                    remoteDirectory: '/var/www/project123',
                                     remoteDirectorySDF: false, 
                                     removePrefix: '', 
                                     sourceFiles: '**/*'
