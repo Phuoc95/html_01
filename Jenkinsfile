@@ -44,7 +44,7 @@ pipeline {
                                     noDefaultExcludes: false, 
                                     patternSeparator: '[, ]+', 
                                     // // execCommand: 'mkdir -p /var/www/project123 && cp -r $WORKSPACE/* /var/www/project123/',
-                                    remoteDirectory: '/var/www/project123',
+                                    remoteDirectory: '/var/www/project1234',
                                     remoteDirectorySDF: false, 
                                     removePrefix: '', 
                                     sourceFiles: '**/*'
