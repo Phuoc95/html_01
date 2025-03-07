@@ -24,7 +24,7 @@ pipeline {
                                     noDefaultExcludes: false, 
                                     patternSeparator: '[, ]+', 
 
-remoteDirectory: '',
+// remoteDirectory: '',
 execCommand: 'cp -r $WORKSPACE/* /var/www/project123/'
 
                                     // remoteDirectory: '/var/www/project123',
