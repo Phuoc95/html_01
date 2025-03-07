@@ -8,6 +8,7 @@ pipeline {
                 echo "Repository cloned successfully"
             }
         }
+        
         stage('SSH server') {
             steps {
                 sshPublisher(
@@ -23,10 +24,6 @@ pipeline {
                                     makeEmptyDirs: false, 
                                     noDefaultExcludes: false, 
                                     patternSeparator: '[, ]+', 
-
-// remoteDirectory: '',
-// execCommand: 'cp -r $WORKSPACE/* /var/www/project123/'
-
                                     remoteDirectory: '/var/www/project123',
                                     remoteDirectorySDF: false, 
                                     removePrefix: '', 
