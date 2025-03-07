@@ -24,7 +24,9 @@ pipeline {
                                     makeEmptyDirs: false, 
                                     noDefaultExcludes: false, 
                                     patternSeparator: '[, ]+', 
-                                    remoteDirectory: '/var/www/project123',
+                                    remoteDirectory: '',
+execCommand: 'cp -r $WORKSPACE/* /var/www/project123/'
+                                    // remoteDirectory: '/var/www/project123',
                                     remoteDirectorySDF: false, 
                                     removePrefix: '', 
                                     sourceFiles: '**/*'
